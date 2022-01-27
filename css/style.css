@@ -61,7 +61,7 @@ body {
   font-weight: 500;
   padding-left: 5px;
 }
-.menu-toggler{
+.menu-toggler {
   display: none;
 }
 .nav_bar {
@@ -111,7 +111,31 @@ body {
   color: #65676b;
   font-size: 30px;
 }
-.nav_bar ul li:last-child{
+.video::after {
+  content: "15+";
+  position: absolute;
+  top: 0;
+  background: #e41e3f;
+  color: #fff;
+  border-radius:10px;
+  padding: 1px 4px;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+.friends::after {
+  content: "1+";
+  position: absolute;
+  top: 0;
+  background: #e41e3f;
+  color: #fff;
+  border-radius:10px;
+  padding: 1px 4px;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+.nav_bar ul li:last-child {
   display: none;
 }
 .right_navigation {
