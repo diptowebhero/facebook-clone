@@ -7,6 +7,7 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+/* header css start */
 .header {
   display: flex;
   align-items: center;
@@ -60,6 +61,9 @@ body {
   font-weight: 500;
   padding-left: 5px;
 }
+.menu-toggler{
+  display: none;
+}
 .nav_bar {
   flex-grow: 1;
 }
@@ -74,7 +78,7 @@ body {
   text-decoration: none;
 }
 .nav_bar ul li {
-  padding: 0px 35px;
+  padding: 0px 25px;
   height: 45px;
   display: flex;
   list-style: none;
@@ -84,6 +88,8 @@ body {
   position: relative;
 }
 .nav_bar ul li::after {
+  content: attr(data-tag);
+  display: none;
   position: absolute;
   top: 113%;
   left: 19px;
@@ -96,14 +102,17 @@ body {
   font-weight: 500;
 }
 .nav_bar ul li:hover::after {
-  content: attr(data-tag);
+  display: block;
 }
 .nav_bar ul li:hover {
   background: #f0f2f5;
 }
 .nav_bar ul li a span {
   color: #65676b;
-  font-size: 28px;
+  font-size: 30px;
+}
+.nav_bar ul li:last-child{
+  display: none;
 }
 .right_navigation {
   flex-basis: 350px;
@@ -121,7 +130,10 @@ body {
   transition: 0.3s;
 }
 .navigation li:hover {
- background:  #d8dbe2;
+  background: #d8dbe2;
+}
+.navigation li:nth-child(3) {
+  display: none;
 }
 .navigation li a span {
   color: #242526;
@@ -133,7 +145,7 @@ body {
 .profile {
   display: flex;
   align-items: center;
-  border-radius:25px;
+  border-radius: 25px;
   padding: 4px;
   background: unset;
   transition: 0.3s;
@@ -159,10 +171,10 @@ body {
   background: #f0f2f5;
   border-radius: 50%;
 }
-.apps:hover{
+.apps:hover {
   background: #000;
 }
-.messenger i{
+.messenger i {
   color: #242526;
-
 }
+/* header css end */
