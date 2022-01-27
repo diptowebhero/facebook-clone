@@ -134,7 +134,7 @@ body {
   display: flex;
   align-items: center;
   border-radius:25px;
-  padding: 0px 3px;
+  padding: 4px;
   background: unset;
   transition: 0.3s;
 }
