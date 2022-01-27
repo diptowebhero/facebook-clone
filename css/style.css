@@ -118,25 +118,51 @@ body {
 }
 .navigation li {
   margin-left: 20px;
+  transition: 0.3s;
+}
+.navigation li:hover {
+ background:  #d8dbe2;
 }
 .navigation li a span {
-  color: #65676b;
+  color: #242526;
   font-size: 28px;
 }
 .navigation li a i {
-  color: #65676b;
-  font-size: 28px;
+  font-size: 25px;
 }
 .profile {
   display: flex;
   align-items: center;
+  border-radius:25px;
+  padding: 0px 3px;
+  background: unset;
+  transition: 0.3s;
 }
 .profile img {
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   margin-right: 5px;
 }
 .profile span {
   font-weight: 500;
+}
+.apps,
+.messenger,
+.notification,
+.arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+  border-radius: 50%;
+}
+.apps:hover{
+  background: #000;
+}
+.messenger i{
+  color: #242526;
+
 }
