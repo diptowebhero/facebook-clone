@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  width: 100%;
+  padding: 0px 15px;
+  background: white;
+  box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+.search_bar {
+  display: flex;
+  align-items: center;
+  flex-basis: 320px;
+  flex-grow: 0;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.input_field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+  border-radius: 25px;
+}
+.input_field i {
+  width: 30px;
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  padding: 0px 5px;
+  color: #797b7f;
+  font-weight: 600;
+}
+.input_field input {
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 40px;
+  background: #f0f2f5;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.nav_bar {
+  flex-grow: 1;
+}
+.nav_bar ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav_bar ul li a {
+  text-decoration: none;
+}
+.nav_bar ul li {
+  padding: 0px 35px;
+  height: 45px;
+  display: flex;
+  list-style: none;
+  border-radius: 10px;
+  align-items: center;
+  transition: 0.3s;
+  position: relative;
+}
+.nav_bar ul li::after {
+  position: absolute;
+  top: 113%;
+  left: 19px;
+  background-color: #242526;
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.nav_bar ul li:hover::after {
+  content: attr(data-tag);
+}
+.nav_bar ul li:hover {
+  background: #f0f2f5;
+}
+.nav_bar ul li a span {
+  color: #65676b;
+  font-size: 28px;
+}
+.right_navigation {
+  flex-basis: 350px;
+  flex-grow: 0;
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.navigation li {
+  margin-left: 20px;
+}
+.navigation li a span {
+  color: #65676b;
+  font-size: 28px;
+}
+.navigation li a i {
+  color: #65676b;
+  font-size: 28px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.profile span {
+  font-weight: 500;
+}
