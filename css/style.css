@@ -17,6 +17,7 @@ body {
   padding: 0px 15px;
   background: white;
   box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+  position: fixed;
 }
 .search_bar {
   display: flex;
@@ -117,35 +118,35 @@ body {
   top: 0;
   background: #e41e3f;
   color: #fff;
-  border-radius:10px;
+  border-radius: 10px;
   padding: 1px 4px;
   font-size: 14px;
   font-weight: 600;
-  
+  right: 12px;
 }
 .friends::after {
   content: "1+";
   position: absolute;
   top: 0;
+  right: 12px;
   background: #e41e3f;
   color: #fff;
-  border-radius:10px;
+  border-radius: 10px;
   padding: 1px 4px;
   font-size: 14px;
   font-weight: 600;
-  
 }
 .notification-1::after {
   content: "15+";
   position: absolute;
   top: 0;
+  right: -18px;
   background: #e41e3f;
   color: #fff;
-  border-radius:10px;
+  border-radius: 10px;
   padding: 1px 4px;
   font-size: 14px;
   font-weight: 600;
-  
 }
 .nav_bar ul li:last-child {
   display: none;
@@ -164,6 +165,7 @@ body {
 .navigation li {
   margin-left: 20px;
   transition: 0.3s;
+  position: relative;
 }
 .navigation li:hover {
   background: #d8dbe2;
@@ -214,3 +216,62 @@ body {
   color: #242526;
 }
 /* header css end */
+main {
+  max-width: 1536px;
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.left_header,
+.right_header {
+  flex-basis: 330px;
+  height: 100vh;
+}
+/* left_header css start */
+.left_header {
+  padding: 70px 15px 0px 15px;
+  overflow: auto;
+}
+
+.left_header ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+  padding: 5px 10px;
+}
+.left_header ul li img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.underline {
+  width: 100%;
+  background: #dbdbdb;
+  height: 1px;
+  margin-left: 10px;
+}
+.shortcuts {
+  margin-top: 12px;
+  padding: 5px 10px;
+}
+.shortcuts button {
+  display: none;
+}
+.shortcuts h4 {
+  color: #65676b;
+  font-weight: 600;
+}
+.left_header ul li:hover {
+  background: #f0f2f5;
+  border-radius: 5px;
+}
+/* left_header css end */
+.middle_section {
+  flex-grow: 1;
+}
