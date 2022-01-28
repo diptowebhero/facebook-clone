@@ -31,6 +31,9 @@
   }
 }
 @media (max-width: 694px) {
+  .left_header{
+    display: none;
+  }
   .nav_bar {
     display: none;
   }
