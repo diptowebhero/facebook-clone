@@ -9,6 +9,9 @@
     align-items: center;
     justify-content: center;
   }
+  .left_header {
+    display: none;
+  }
   .navigation li:nth-child(3) {
     display: flex;
   }
@@ -25,13 +28,18 @@
     display: flex;
   }
 }
+@media (max-width: 900px) {
+  .right_header {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   .nav_bar ul li {
     padding: 0px 15px;
   }
 }
 @media (max-width: 694px) {
-  .left_header{
+  .left_header {
     display: none;
   }
   .nav_bar {
@@ -41,9 +49,8 @@
     color: #797b7f;
     font-size: 30px;
     margin-left: 10px;
-    
   }
-  .menu-toggler{
+  .menu-toggler {
     display: block;
   }
 }

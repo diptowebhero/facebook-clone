@@ -320,6 +320,17 @@ main {
   border-radius: 5px;
   cursor: pointer;
 }
+.footer_text a {
+  color: #696c70;
+  font-weight: normal;
+  line-height: 15px;
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+}
+.footer_text span{
+  transform: translateY(9px);
+}
 /* left_header css end */
 .middle_section {
   flex-grow: 1;
