@@ -213,7 +213,8 @@ body {
 .apps,
 .messenger,
 .notification,
-.arrow {
+.arrow,
+.add {
   width: 40px;
   height: 40px;
   display: flex;
@@ -328,7 +329,7 @@ main {
   display: inline-block;
   text-decoration: none;
 }
-.footer_text span{
+.footer_text span {
   transform: translateY(9px);
 }
 /* left_header css end */
