@@ -69,6 +69,12 @@
   .active_member ul li:nth-child(5) {
     display: none;
   }
+  .likes-man {
+    display: none;
+  }
+  .total-like {
+    display: block;
+  }
 }
 @media (max-width: 500px) {
   .apps,
@@ -135,6 +141,9 @@
   .room-btn img {
     width: 19px;
     margin-right: 8px;
+  }
+  .like_comments_icon {
+    padding: 10px 28px;
   }
 }
 @media (max-width: 358px) {
