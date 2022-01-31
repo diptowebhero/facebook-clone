@@ -329,7 +329,7 @@ main {
   color: #696c70;
   font-weight: normal;
   line-height: 15px;
-  font-size: 12px;
+  font-size: 11px;
   display: inline-block;
   text-decoration: none;
 }
@@ -344,6 +344,7 @@ main {
   overflow: auto;
   padding: 0px 32px;
   max-width: 820px;
+  height: 100vh;
   margin: 0 auto;
 }
 .story_container {
@@ -457,7 +458,7 @@ main {
 }
 .create_post_container {
   max-width: 550px;
-  margin: 30px auto;
+  margin: 15px auto;
   background: white;
   box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
   border-radius: 10px;
@@ -515,6 +516,51 @@ main {
 }
 .create_post_bottom ul li:nth-child(3) span {
   color: #ffb300;
+}
+.create_room_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  position: relative;
+}
+.room-member ul {
+  display: flex;
+}
+.room-member ul li {
+  list-style: none;
+  padding: 3px 0px !important;
+}
+.room-member ul li a:hover{
+  background: none !important;
+}
+.room-btn {
+  display: flex;
+  border: 3px solid #e7f3ff;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #216fdb;
+  cursor: pointer;
+}
+.room-btn img {
+  width: 25px;
+  margin-right: 8px;
+}
+.more_room {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 50%;
+  position: absolute;
+  right: 23px;
+  top: 17px;
+  cursor: pointer;
 }
 /*========== middle css end========== */
 /* right header css start */
