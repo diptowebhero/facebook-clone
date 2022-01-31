@@ -476,6 +476,7 @@ main {
   border-radius: 50%;
   margin-right: 10px;
   align-items: center;
+  cursor: pointer;
 }
 .create_post input {
   flex-grow: 1;
@@ -500,6 +501,7 @@ main {
   align-items: center;
   font-weight: 500;
   flex: 1;
+  cursor: pointer;
 }
 
 .create_post_bottom ul li h5 {
@@ -529,6 +531,7 @@ main {
 }
 .room-member ul {
   display: flex;
+  position: relative;
 }
 .room-member ul li {
   list-style: none;
@@ -536,6 +539,26 @@ main {
 }
 .room-member ul li a:hover {
   background: none !important;
+}
+.room-member ul li::after {
+  content: attr(data-tag);
+  display:none;
+  position: absolute;
+  top: 113%;
+  left: -19px;
+  min-width: 70px;
+  background-color: #242526;
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 14px;
+  line-height:20px;
+}
+.room-member ul li:hover::after {
+  display: block;
 }
 .room-btn {
   display: flex;
