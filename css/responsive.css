@@ -60,6 +60,16 @@
     padding: 0px 3px;
   }
 }
+@media (max-width: 600px) {
+  .active_member ul li:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 530px) {
+  .active_member ul li:nth-child(5) {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .apps,
   .messenger,
@@ -101,6 +111,36 @@
   .story-m {
     display: none;
   }
+  .create_post_bottom ul li:nth-child(3) {
+    display: none;
+  }
+  .middle_section {
+    padding: 0px 18px;
+  }
+}
+.create_post_bottom ul li h5 {
+  font-size: 13px;
+}
+@media (max-width: 452px) {
+  .active_member ul li:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .room-btn {
+    padding: 10px 8px;
+    font-size: 12px;
+    align-items: center;
+  }
+  .room-btn img {
+    width: 19px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 358px) {
+  .active_member ul li:nth-child(1) {
+    display: none;
+  }
 }
 @media (max-width: 335px) {
   .middle_section {
@@ -116,5 +156,14 @@
   }
   .story_bottom h4 {
     font-size: 12px;
+  }
+  .create_post input {
+    font-size: 13px;
+  }
+  .create_post_bottom ul li span {
+    font-size: 25px;
+  }
+  .create_post_bottom ul li span {
+    margin-right: 2px;
   }
 }

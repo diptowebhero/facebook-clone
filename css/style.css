@@ -498,7 +498,9 @@ main {
   display: flex;
   align-items: center;
   font-weight: 500;
+  flex: 1;
 }
+
 .create_post_bottom ul li h5 {
   font-weight: 600;
   font-size: 14px;
