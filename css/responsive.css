@@ -53,6 +53,12 @@
   .menu-toggler {
     display: block;
   }
+  .story-n {
+    display: none;
+  }
+  .story_title {
+    padding: 0px 3px;
+  }
 }
 @media (max-width: 500px) {
   .apps,
@@ -91,5 +97,24 @@
     width: 30px;
     height: 30px;
     margin-right: 8px;
+  }
+  .story-m {
+    display: none;
+  }
+}
+@media (max-width: 335px) {
+  .middle_section {
+    padding: 0px 14px;
+  }
+  .more_story span {
+    font-size: 20px;
+  }
+  .more_story {
+    width: 30px;
+    height: 32px;
+    transform: translateX(-27px);
+  }
+  .story_bottom h4 {
+    font-size: 12px;
   }
 }
