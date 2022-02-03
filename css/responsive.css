@@ -132,7 +132,7 @@
   .like_button,
   .comment_button,
   .share_button {
-    padding: 5px 0px;
+    padding: 4px 6px;
   }
   .video iframe {
     height: 227px;
