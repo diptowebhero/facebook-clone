@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "segoe";
+  src: url("/fonts/Segoe\ UI.ttf");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "segoe";
   background: #f0f2f5;
 }
-a{
+a {
   text-decoration: none;
 }
 /* header css start */
@@ -286,7 +290,7 @@ main {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   transition: 0.3s;
   padding: 5px 10px;
@@ -641,7 +645,7 @@ main {
   right: -19px;
   top: 0px;
 }
-.post_title_m .fas{
+.post_title_m .fas {
   font-size: 9px;
 }
 .time {
@@ -667,6 +671,7 @@ main {
 .post_profile h5 {
   font-weight: 700;
   cursor: pointer;
+  font-size: 15px;
 }
 .caption {
   padding: 10px 0px;
@@ -694,9 +699,12 @@ main {
 .likes img {
   width: 20px;
   height: 20px;
+  margin-left: -3px;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 .like_users {
-  margin-left: 10px;
+  margin-left: 3px;
 }
 .like_users,
 .comments p {
